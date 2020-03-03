@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <input type="file" id="fileInput" />
+  <script>
+    fileInput.addEventListener('change', (e) => {
+      // console.log(file)
+      let file = e.target.files[0] // 获取所选文件信息
+      // console.log(Object.prototype.toString.call(file)) // [object File]
+      // console.log(Object.prototype.toString.call(file.slice(0, 102400))) // [object Blob]
+      let cur = 0,
+          size = 1024 * 1024 // 1M一个切片
+      let fileChunkList = []
+      while (cur < file.size) {
+        fileChunkList.push({
+          file: file.slice(cur, cur + size)
+        })
+        cur += size
+      }
+      console.log(fileChunkList)
+    })
+  </script>
+</body>
+</html>
