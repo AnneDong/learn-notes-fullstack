@@ -15,6 +15,7 @@ https://www.cnblogs.com/nianmumu/p/8417472.html
 [前端自动化单元测试初探](https://www.jianshu.com/p/6726c0410650)
 [实现一个Vue ui 库(单元测试，自动化测试，集成测试)](https://www.jianshu.com/p/20ab81dd51f8)
 [前端单元测试实践（koa篇）](https://juejin.im/post/5d09935ce51d451063431816)
+[运用Jest测试Vue组件中的继承属性和自定义事件]https://www.jianshu.com/p/5cc853af1c7b
 
 ####单元测试
 - View层测试
@@ -90,13 +91,19 @@ sinon是一个测试工具，可以使用sinon来进行模拟http等异步请求
 - [iView](https://github.com/view-design/ViewUI/blob/master/package.json)
   - Vue
   - 使用karma做单元测试
-- [VUX](https://vux.li/)
+- [cube-ui](https://github.com/didi/cube-ui)
+  - Vue
+  - 使用karma做单元测试
+- [Uiv](https://github.com/wxsms/uiv)
   - Vue
   - 使用karma做单元测试
 - [Element](https://element.eleme.cn/#/zh-CN)
   - Vue
   - 使用karma做单元测试
-- [cube-ui](https://github.com/didi/cube-ui)
+
+上面框架，单元测试用例写的挺多，可以参考
+
+- [VUX](https://vux.li/)
   - Vue
   - 使用karma做单元测试
 - [Vant](https://youzan.github.io/vant/#/zh-CN/)
